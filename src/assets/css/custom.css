@@ -1,0 +1,187 @@
+@charset "utf-8"; 
+
+.tooltipbox1{font-size:12px;color:#fff;border:1px solid #000612;background:#7b0009;padding:10px 20px;width:120px; margin-bottom:5px;}
+.tooltipbox1:before{bottom:-1px;content:"";display:block;width:20px;height:7px;overflow:hidden;background:url(../images/bg/bg_moseri01.png);position:absolute;left:50%;margin-left:-10px;margin-bottom:1px;}
+.tooltipbox1.type01{background:#7b0009; color:#fff; margin-bottom:16px;}
+.tooltipbox1.type01:before{background:url(../images/bg/bg_moseri01.png); margin-bottom:12px;}
+.tooltipbox1.type02{background:#ce660a; color:#000; margin-bottom:9px;}
+.tooltipbox1.type02:before{background:url(../images/bg/bg_moseri02.png); margin-bottom:5px;}
+.tooltipbox1.type03{background:#294f00; color:#fff; margin-bottom:8px;}
+.tooltipbox1.type03:before{background:url(../images/bg/bg_moseri03.png);margin-bottom:4px;}
+
+.mpop01 .mpopCont dl dd ul li .btn a.on{background:#198b49;}
+.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap > .k-link.k-pager-nav {position: relative;}
+.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap > .k-link.k-pager-nav > .k-icon {position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;}
+/* .k-dialog a.k-dialog-action.k-dialog-close{margin-top:15px;} */
+
+#map .mapBox{background-color:red;position:absolute;left:400px;width:calc(100% - 450px);}
+
+.mpbHeader ul li:nth-child(4){background:url(../images/bg/bg_mpbList04.png);}
+.mpbHeader ul li:nth-child(5){background:url(../images/bg/bg_mpbList04.png);}
+
+.loginBox .userId{background:#fff url(../images/bg/bg_loginid.png) no-repeat 10px center;}
+.loginBox .userPw{background:#fff url(../images/bg/bg_loginpw.png) no-repeat 10px center;}
+
+.mpop01 .mpopCont dl dd{padding-top:5px;}
+.mpop01 .mpopCont dl dd ul li:first-child{margin-top:5px;}
+
+.orgtable{border-top:2px solid #7f7f7f;width:calc( 100% - 30px );table-layout:fixed;margin:10px auto 0 auto;border-collapse:collapse;}
+.orgtable th{font-size:12px;color:#737373;font-weight:normal;text-align:center;height:35px;border-bottom:1px solid #e5e5e5;border-left:1px solid #e5e5e5;}
+.orgtable td{text-align:center;height:35px;font-size:12px;color:#737373;border-bottom:1px solid #e5e5e5;border-left:1px solid #e5e5e5}
+.orgtable tr>th:first-child{border-left:0;}
+.orgtable tr>td:first-child{border-left:0;}
+
+/* 운송계획 입력 - 파일링크 */
+.wTable td .inp01.file{width:calc( 100% - 110px );}
+.bangjaeCont{height:550px;}
+.isLnkEnabled { color: blue; text-decoration: underline;}
+.isLnkDisabled { color: currentColor; cursor: not-allowed; opacity: 0.5; text-decoration: none; }
+
+/* 운송계획 입력 - 필수항목 */
+div.notify.po{background:#fffccc url(../images/bg/bg_po01.png) no-repeat 5px center;text-indent: 2em; float:right; margin:10px 0 5px;}
+.require, .require.k-input, td.ldgUnitCol span.k-dropdown-wrap.k-state-default, td.ldgUnitCol .k-dropdown.select .k-input {background-color:#fffccc;}
+.readonly, .readonly.k-input {background-color:#efefef;}
+
+/* 수동입력버튼 */
+.btnInManually{display: inline-block; width: 70px; height: 28px; line-height: 28px; text-align: center; color: #fff; font-size: 12px; background: #53758b;  border-radius: 14px;}
+
+.helpWrap{z-index:999999999;}
+
+/* 관계기관 전파 팝업 */
+#orgSpreadPop > table > tbody > tr > td > textarea { width: 98%;height: 100px; }
+#orgSpreadPop table tbody tr td a {margin-left:45px;float:left;width:24px;height:24px;overflow:hidden;border-radius:12px;background:#D71826;}
+
+/* 일반 툴팁 */
+.tooltipbox2.type01{background:#FFF; color:#000; margin-bottom:8px; font-size:12px;}
+.tooltipbox2.type01 h4{color:#F00;font-size:14px; font-weight: bold;}
+.tooltipbox2.type02{background:#FFF; color:#000; margin-bottom:8px; font-size:12px;}
+.tooltipbox2.type02 h4{color:#00F;font-size:14px; font-weight: bold;}
+
+/* 조회조건 상단표시 */
+.pageSubj span.dispSrchCont {
+    font-size: 14px;
+}
+.header div.dispSrchCont {
+    font-size: 14px;
+    width: calc(100% - 450px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    margin-top: 22px;
+    margin-left: 16px;
+}
+
+/* 이동경로 메뉴추가 */
+#btnCosas {
+	cursor: pointer;
+    border-bottom: 1px solid #1f3d5c;
+    width: 100%;
+    height: 59px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    /* background: url(../images/ico/ico_down01.png) no-repeat 290px center; */
+}
+
+#btnCosas img {
+    float: left;
+    margin: 10px 0 0 10px;
+    vertical-align: middle;
+}
+
+#btnCosas span {
+    float: left;
+    margin-left: 10px;
+    color: #fff;
+    height: 59px;
+    line-height: 59px;
+    font-size: 15px;
+}
+
+#btnCosas:hover{background:#081e38 url(../images/ico/ico_up01.png) no-repeat 290px center;}
+#btnCosas:hover:before{content:"";display:block;width:4px;height:59px;overflow:hidden;position:absolute;left:0;top:0;background:#fe5621;}
+
+/*고시대상차량*/
+
+.spcNtcnButton {
+    background: #fe5621;
+    width: 80px;
+    text-align: center;
+    height: 35px;
+    border-radius: 18px;
+    padding: 0;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 5px;
+    line-height: 35px;
+}
+
+.popMargin { margin:15px; }
+
+/* 단속관리 서브타이틀 검색 기능 */
+.rmHeader { width:100%;height:40px;overflow:hidden;position:relative;text-align:right; }
+.rmHeader h3{ position:absolute;left:10px;display:block;height:40px;line-height:40px;font-size:20px;color:#333; }
+.rmHeader h3.po{ background:url(../images/bg/bg_po01.png) no-repeat left center;padding-left:20px; }
+.rmHeader h3.e01{ left:150px;color:#848484;font-size:15px; }
+.rmHeader .btnAddd{ position:absolute;left:170px;top:0; }
+.rmHeader .btn01{ margin-top:3px;display:inline-block;width:108px;height:32px;line-height:32px;text-align:center;color:#fff;font-size:12px;background:#53758b;border-radius:16px; }
+.rmHeader .btn01.auto{width:auto;padding:0 10px;position:absolute;left:0;top:0; }
+
+.rmHeader .inp01 {
+    border: 1px solid #e5e8ed;
+    border-radius: 17px;
+    height: 33px;
+    width: 150px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #acb7c7;
+}
+
+/* 단속관리 첨부파일명 줄임 */
+.rmFileName {
+    text-overflow: ellipsis;
+    width: 90%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+/*운송계획 상세 지도 버튼 위치 설정*/
+.planDetailBox{position: relative}
+
+/*dtg 정보오류검증이력 검색 달력 2단*/
+.date-row{width:43%; display: inline-block; vertical-align: middle}
+.inp01.datetimepicker{width:170px !important;}
+/*20201025*/
+/* .pageSubj{margin: 30px 25px 0;} */
+#searchForm .wTable{/* border-left: 1px solid #c5c5c5; */border-top: 0px;float: left;table-layout: auto;width:80%;}
+#searchForm .wTable tr > th {width:10%;padding-left:15px;border:0;text-align: left;}
+/* #searchForm .wTable tr:nth-child(1) > th,
+#searchForm .wTable tr:nth-child(1) > td{padding-top: 15px} */
+/* #searchForm .wTable tr:nth-last-child(1) > th,
+#searchForm .wTable tr:nth-last-child(1) > td{padding-bottom: 15px} */
+#searchForm .wTable tr > td {width:15%;border:0;}
+#searchForm .pbtnBox {text-align: right; margin: 0;}
+#searchForm .pbtnBox a{line-height: 32px;}
+.sideList{display: inline-block;float: none;margin: 0; width:100%; text-align: right}
+.sideList a{float:none;padding:10px 15px;}
+#searchForm .pbtnBox{margin:0;text-align: right;position: absolute;bottom: 10px;right: 30px;}
+.contBox .pbtnBox {text-align: right; margin: 0;}
+
+/*메인대시보드 css*/
+#mainDashboard .statusGrid{ display: inline-table; width: calc(50% - 75px); margin: 10px 40px 35px 0; box-shadow: 0px 0px 21px #e0e0e0; border-radius: 30px; padding: 15px;}
+#mainDashboard .titleArea{ font-size: 1.5em; font-weight: 600; color: #0d2d4f; margin-bottom: 20px; border-bottom: 1px solid #d5d5d5; padding-bottom: 15px; width: 97%;}
+#mainDashboard .title{background:#fe5621; padding:15px 30px; color:#fff; position: relative; border-radius: 30px; font-size: 1.1em; box-shadow: 1px 1px 8px #a0a0a0; }
+#mainDashboard .title > button{position: absolute; right: 15px; top: 10px; border-radius: 100%; background: none; border: 2px solid #fff; font-size: 1.2em; color: #fff; font-weight: 400; padding: 0px 6px 3px;}
+#mainDashboard .title > button:hover{background:#fff;color:#fe5621}
+#mainDashboard .status{font-size:1.1em;text-align:center; padding:15px 15px 10px;}
+#mainDashboard .status > .tCnt{ padding: 5px 15px; border-radius: 30px; border: 1px solid #d5d5d5; margin-right: 5px; vertical-align: middle; font-size: 0.9em;}
+#mainDashboard .status > .tCnt:hover{color:#fff; background:#fe5621; border: 1px solid #fe5621; font-weight: 600}
+#mainDashboard .status > .tCnt:nth-last-child(1){margin-right: 0;}
+#mainDashboard .pbtnBox a{border-radius:18px;display:inline-block;width:100px;padding:0 10px;line-height:35px;height:35px;overflow:hidden;text-align:center;font-size:12px;color:#000;}
+#mainDashboard .pbtnBox a span{vertical-align:middle;color:#fff;font-size:12px;}
+#mainDashboard .pbtnBox a.btype01{background:#52779d;}
+#mainDashboard .k-grid-header th.k-header{height: 41px;}
+
