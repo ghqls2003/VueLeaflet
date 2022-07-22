@@ -36,16 +36,8 @@
 					<dl>
 						<dt>오늘</dt>
 						<dd>
-							<div class="item">
-								<span class="t01">운송계획</span>
-								<span class="t02">건</span>
-							</div>
-							<div class="item">
-								<span class="t01">운송중</span>
-								<span class="t02">건</span>
-							</div>
-							<div class="item">
-								<span class="t01">운송종료</span>
+							<div class="item" v-for="(tod, i) in status" :key="i">
+								<span class="t01">{{ tod }}</span>
 								<span class="t02">건</span>
 							</div>
 						</dd>
@@ -170,9 +162,7 @@
 											<col width="100" />
 										</colgroup>
 										<tr>
-											<th>순번</th>
-											<th>이름</th>
-											<th>휴대전화</th>
+											<th v-for="(th, i) in mpbPlane" :key="i">{{ th }}</th>
 										</tr>
 									</table>
 									<div class="scrolls">
@@ -232,9 +222,11 @@ export default {
   name: 'RltmCntrlView',
   data() {
     return {
-		map: null,
-		mattTh: ['순번', '물질구분', '물질명', 'CAS no','UN no', '용량', '함량(%)'],
-		mpb: ['단말기 알림', '운전자 통화', '상황 전파', '사고 전환', '사고 신고', '상황 종료'],
+			map: null,
+			mattTh: ['순번', '물질구분', '물질명', 'CAS no','UN no', '용량', '함량(%)'],
+			mpb: ['단말기 알림', '운전자 통화', '상황 전파', '사고 전환', '사고 신고', '상황 종료'],
+			mpbPlane: ['순번', '이름', '전화'],
+			status: ['운송계획', '운송중', '운송종료'],
     }
   },
   props: {

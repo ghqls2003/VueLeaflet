@@ -72,8 +72,8 @@ export default {
   },
   mounted() {
     this.getData();
-    // setInterval(this.getRandMarker, 5000)
     setInterval(this.getRandMarker, 5000)
+    // this.getRandMarker
   },
   methods: {
     getData() {
@@ -83,7 +83,7 @@ export default {
         this.cardata = data.data
 
         var roopDataList = []
-        for(var n=0; n<500; n++){
+        for(var n=0; n<300; n++){
           for(var o=0; o<10; o++){
             roopDataList.push(this.cardata[o])
           }
@@ -124,7 +124,7 @@ export default {
 <style scoped>
   #app {
       width: 99vw;
-      height: 98vh;
+      height: 97vh;
   }
 
   #mapContainer {
