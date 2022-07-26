@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+.disabled {
+    pointer-events: none;
+    background-color: #eee;
+    color: #555;
+    opacity: 1;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.searchBox .datetimepicker.k-input {
+	border:0; 
+	padding:0; 
+	height:33px !important;
+}
+
+.searchBox .inp01 {
+    float: left;
+    border: 1px solid #e5e8ed;
+    height: 33px;
+    font-size: 12px;
+    color: #222;
+}
+/* 임계치 관리 */
+.col-4,.col-3{float: left; margin-right: 55px}
+.col-4{width:calc(40% - 55px)}
+.col-3{width:calc(30% - 55px)}
+/* 임계치 관리 차트 데이터 없을때 */
+#limitDoChart, #limitLnChart{
+    text-align: center;
+    background: #fff;
+    border-top: 2px solid #226a85;
+    border-bottom: 2px solid #226a85;
+    padding: 20px 0;
+    margin: 11px 0;
+    height: 400px;
+    line-height: 210px;
+}
+
+/* 개인정보취급서약 */
+.termTitle {
+	width:100%;
+	font-size : 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.termBody {
+    font-size : 25px;
+}
+
+.termItem {
+    font-size : 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.termFooter {
+	width:100%;
+    font-size : 20px;
+    text-align: right;
+}
+

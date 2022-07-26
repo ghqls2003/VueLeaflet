@@ -7,12 +7,12 @@
     <router-link class="routes" to="leafletview">실시간 이동차량</router-link> 
     <router-link class="routes" to="nodelinkview">노드링크 조회</router-link>
     <router-link class="routes" to="leaf50000view">50000대</router-link>
-    <router-link class="routes" to="virtualmain">VirtualList</router-link>
+    <router-link class="routes" to="marketview">거래게시판</router-link>
+    <router-link class="routes" to="lifecycleview">라이프사이클</router-link>
 
     </div>
     <!-- component route location-->
     <router-view></router-view>
-    <div>home test</div>
   </div>
 </template>
 

@@ -1,16 +1,22 @@
 <template>
-  <div></div>
+  <div>
+    HomeTest Page
+  </div>
 </template>
 
 <script>
 export default {
-  name:'virtualView',
+  name:'HomeTest',
   components: {},
   data() {
     return {
+      sampleData: ''
     }
   },
+  setup() {},
+  created() {},
   mounted() {},
+  unmounted() {},
   methods: {}
 }
 </script>

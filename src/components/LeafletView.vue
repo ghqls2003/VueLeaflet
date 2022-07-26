@@ -2,7 +2,7 @@
   <div id="app">
     <l-map id="mapContainer" ref="map"
       :zoom='8'
-      :minZoom='7'
+      :minZoom='4'
       :maxZoom='18'
       :center="[36.176267, 126.976912]"
     >
@@ -75,6 +75,9 @@ export default {
     setInterval(this.getRandMarker, 5000)
     // this.getRandMarker
   },
+  updated() {
+    // alert("바뀜")
+  },
   methods: {
     getData() {
       axios.get('/vc/selectRealTimeCarInfo')
@@ -101,7 +104,6 @@ export default {
       this.$refs.map.mapObject.flyTo([value[0], value[1]], 18)
     },
     getMarker() {
-
       for(var i=0; i<this.cardata.length; i++){
         var setting = [this.cardata[i].coord.y, this.cardata[i].coord.x]
         this.cardatalistCoord.push(setting)
